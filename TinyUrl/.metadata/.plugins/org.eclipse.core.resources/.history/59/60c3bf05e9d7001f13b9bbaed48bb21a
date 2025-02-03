@@ -1,0 +1,11 @@
+package com.url.shortener.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.url.shortener.models.ClickEvent;
+
+@Repository
+public interface ClickEventRepository extends JpaRepository<ClickEvent, Long> {
+
+}

@@ -1,0 +1,5 @@
+DATABASE_URL = jdbc:mysql://localhost:3306/urlshortenerdb
+DATABASE_USERNAME = root
+DATABASE_PASSWORD= Rahithya@14
+DATABASE_dialect = org.hibernate.dialect.MySQLDialect
+JWT_SECRET = ebff7d18199480fe041bae00cb5fa24a317cf8c894f82e1e7985d6ec52fe2b943f18157ab26adc3930a019e2a3059c406fe781226b6f9fb5894ebf39d57f09b4

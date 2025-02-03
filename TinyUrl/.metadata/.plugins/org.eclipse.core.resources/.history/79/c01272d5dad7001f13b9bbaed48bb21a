@@ -1,0 +1,29 @@
+package com.url.shortener.service;
+
+import java.time.LocalDateTime;
+
+import org.springframework.stereotype.Service;
+
+import com.url.shortener.dtos.UrlMappingDTO;
+import com.url.shortener.models.UrlMapping;
+import com.url.shortener.models.User;
+
+@Service
+public class UrlMappingService {
+
+	public UrlMappingDTO createShortUrl(String originalUrl, User user) {
+		String shortUrl = generateShortUrl();
+		
+		UrlMapping urlMapping = new UrlMapping();
+		urlMapping.setOriginalUrl(originalUrl);
+		urlMapping.setShortlUrl(shortUrl);
+		urlMapping.setUser(user);
+		urlMapping.setCreatedTime(LocalDateTime.now());
+		return null;
+	}
+
+	private String generateShortUrl() {
+		return null;
+	}
+
+}

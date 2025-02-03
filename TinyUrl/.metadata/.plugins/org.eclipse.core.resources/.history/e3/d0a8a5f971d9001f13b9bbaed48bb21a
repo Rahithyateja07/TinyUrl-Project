@@ -1,0 +1,18 @@
+package com.url.shortener.controller;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class RedirectController {
+	
+	
+	
+	public ResponseEntity<Void> redirect(@PathVariable(name="shortUrl") String shortUrl){
+		
+		
+		
+	}
+
+}

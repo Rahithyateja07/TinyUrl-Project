@@ -1,0 +1,24 @@
+package com.url.shortener.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.url.shortener.models.UrlMapping;
+import com.url.shortener.service.UrlMappingService;
+
+@RestController
+public class RedirectController {
+
+	@Autowired
+	private UrlMappingService urlMappingService;
+	
+	
+	public ResponseEntity<Void> redirect(@PathVariable(name="shortUrl") String shortUrl){
+		
+		UrlMapping urlMapping = urlMappingService.getOriginalUrl(shortUrl);
+		
+	}
+
+}
